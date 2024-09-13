@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite sua idade para determinar sua classificação eleitoral:");
+        int idade = entrada.nextInt();
+
+        if (idade < 16) {
+            System.out.println("Não é eleitor.");
+        } else if (idade <= 17) {
+            System.out.println("É eleitor facultativo.");
+        } else if (idade >= 18 && idade <= 65) {
+            System.out.println("Eleitor obrigatório.");
+        } else if (idade > 65) {
+            System.out.println("Eleitor facultativo.");
+        }
+    }
+}
+
