@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Qual foi a quantidade de canetas compradas?");
+        int qcanetascompradas = entrada.nextInt();
+
+        System.out.println("Qual foi o valor pago em reais?");
+        double valorpago = entrada.nextDouble();
+
+        System.out.println("Qual foi o troco recebido em reais?");
+        double valortroco = entrada.nextDouble();
+
+        double custocaneta = (valorpago - valortroco) / qcanetascompradas;
+        System.out.printf("Cada caneta custou: R$ %.2f\n", custocaneta);
+    }
+}
