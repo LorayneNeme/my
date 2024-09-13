@@ -1,0 +1,29 @@
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite o horário deste momento em formato HH:MM:");
+        String horaString = entrada.nextLine();
+        String[] partes = horaString.split(":");
+
+        if (partes.length != 2) {
+            System.out.println("Formato de hora inválido. Por favor, use HH:MM.");
+            return;
+        }
+
+        int horas = Integer.parseInt(partes[0]);
+        int minutos = Integer.parseInt(partes[1]);
+
+        if (horas < 0 || horas > 23 || minutos < 0 || minutos > 59) {
+            System.out.println("Horas ou minutos inválidos. Horas devem estar entre 0 e 23 e minutos entre 0 e 59.");
+            return;
+        }
+
+        int totalMinutos = (horas * 60) + minutos;
+        System.out.printf("Total de minutos desde o início do dia (00:00): %d minutos\n", totalMinutos);
+    }
+}
+
