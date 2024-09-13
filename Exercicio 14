@@ -1,0 +1,16 @@
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Para calcular a quantidade recomendada de água a ser ingerida por dia, digite o seu peso em kg:");
+        double pesoKg = entrada.nextDouble(); 
+
+        double quantidadeRec = (pesoKg * 35) / 1000; 
+
+        System.out.printf("A Quantidade recomendada de água: %.2f litros por dia%n", quantidadeRec); 
+    }
+}
+
