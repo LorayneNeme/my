@@ -1,0 +1,20 @@
+
+class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite aqui o valor do litro em reais da gasolina:");
+        double gasolina = entrada.nextDouble();
+
+        System.out.println("Digite aqui o valor do litro em reais do etanol:");
+        double etanol = entrada.nextDouble();
+
+        double valor = (etanol / gasolina);
+        if (valor < 0.70) {
+            System.out.println("O litro do etanol está abaixo de 70% do valor da gasolina, logo escolha abastecer por etanol.");
+        } else {
+            System.out.println("Abasteça com gasolina");
+        }
+    }
+}
+
