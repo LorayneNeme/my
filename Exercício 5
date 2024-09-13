@@ -1,0 +1,22 @@
+class Main {
+  public static void main(String[] args) {
+    
+        Scanner scanner = new Scanner(System.in);
+        double valorhora;
+        
+        System.out.println("Para calcular seu salário, digite o valor recebido por hora:");
+        valorhora = scanner.nextDouble();
+        
+        System.out.println("Próximo passo, é necessário o número de horas trabalhadas por mês:");
+        valorhora = scanner.nextDouble();
+        
+        System.out.println("Agora digite aqui, o percentual de desconto do INSS (sem utilizar %):");
+        double percentualINSS = scanner.nextDouble();
+        
+        double salariobr = valorhora * valorhora;
+        double descontoINSS = (percentualINSS / 100) * salariobr;
+        double salarioliq = salariobr - descontoINSS;
+        
+        System.out.printf("O Salário Líquido de: R$ %.2f\n", salarioliq);
+    }
+}
