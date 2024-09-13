@@ -1,0 +1,15 @@
+class Main {
+  public static void main(String[] args) {
+    Scanner entrada = new Scanner(System.in);
+    
+    float raio;
+    float area;
+    
+    System.out.print("Digite o tamanho do raio do círculo que deseja calcular: ");
+    raio = entrada.nextFloat();
+    
+    area = 3.14159f * (raio * raio); 
+    
+    System.out.printf("Área = %.4f\n", area); 
+  }
+}
