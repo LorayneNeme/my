@@ -1,0 +1,17 @@
+
+class Main {
+  public static void main(String[] args) {
+    
+    Double dolar;
+    Double real;
+    Double cotacao = 4.95;    
+    Scanner entrada = new Scanner(System.in);
+   
+    System.out.print("Digite o valor em dólar para a conversão: ");
+    dolar = entrada.nextDouble();
+    real = dolar * cotacao;
+    
+ 
+    System.out.printf("US$%.2f = R$%.2f", dolar, real);     
+  }
+}
