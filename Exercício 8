@@ -1,0 +1,12 @@
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite a temperatura em Fahrenheit:");
+        double temperaturaFahrenheit = entrada.nextDouble();
+        double temperaturaCelsius = (5.0 / 9) * (temperaturaFahrenheit - 32);
+
+        System.out.printf("A temperatura em Celsius é: %.2f°C%n", temperaturaCelsius);
+    }
+}
+
